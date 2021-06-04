@@ -1,0 +1,50 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="secondary">
+    <ion-progress-bar color = "success"value="0.66" buffer="0.33"></ion-progress-bar>
+    <center>
+      <h1>Pedido</h1>
+    </center>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-toolbar>
+    <img src="/assets/topcars.png">
+    <center>
+      <h1>Unidades Disponiveis</h1>
+    </center>
+  </ion-toolbar>
+ 
+
+  <ion-toolbar>
+    <ion-list>
+      <ion-radio-group value="Unidades">
+        <ion-list-header>
+          <ion-label>Selecione a unidade desejada:</ion-label>
+        </ion-list-header>
+
+        <ion-item>
+          <ion-label>Campinas</ion-label>
+          <ion-radio slot="start" value="Campinas"></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Santo André</ion-label>
+          <ion-radio slot="start" value="Santo André"></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>São Paulo</ion-label>
+          <ion-radio slot="start" value="São Paulo"></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>São Caetano do Sul</ion-label>
+          <ion-radio slot="start" value="São Caetano"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-toolbar>
+
+  <ion-button  (click) = "abrirPagina2()" expand = block  >Prosseguir para data de reserva</ion-button>
+</ion-content>
