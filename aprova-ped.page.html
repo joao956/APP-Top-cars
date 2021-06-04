@@ -1,0 +1,65 @@
+<ion-content>
+<ion-header>
+  <ion-header [translucent]="true">
+    <ion-toolbar color="secondary">
+        <ion-progress-bar color = "success"value="0.99 " buffer="0.01"></ion-progress-bar>
+        <ion-title>
+            <center> Confirmação de Reserva</center>
+        </ion-title>
+    </ion-toolbar>
+    <img src="/assets/topcars.png">
+</ion-header>
+
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-subtitle>
+                <h3> Reserva confirmada
+                    <ion-icon name="checkmark-outline" color="success"></ion-icon>
+
+                </h3>
+            </ion-card-subtitle>
+
+
+
+            <ion-card-title>
+                <h3> Sua reserva foi efetuada com sucesso</h3>
+            </ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+            Em breve você recebera um e-mail no endereço **************@gmail.com  com todos os detalhes da reserva.
+
+        </ion-card-content>
+    </ion-card>
+    
+    <br>
+
+    <ion-card>
+      <ion-card-header>
+      <ion-card-title>Informações do pedido</ion-card-title>
+      </ion-card-header>
+     
+      <ion-card-content> 
+
+        CHEVROLET ONIX 1.0
+        <img src="https://orca.com.br/uploads/products/versions/chevrolet-branco-summit-novo-onix.png" >
+        Seu pedido foi reservado no Endereço: Av. José Lopes Serra , Campinas - SP, 13053-241
+        
+        <br>
+        Dàs 00:00 ás 06:00 <br>
+        Telefone: 0800 969 2021 <br><br>
+        <ion-header [translucent]="true">
+          
+              <ion-title>
+                     <center>  
+                        <center>
+                            <ion-button  (click)  = "abrirpagina2()" expand = block  color="success">
+                                Solicitar novo pedido?
+                            </ion-button>
+                        </center>
+                    </center>
+              </ion-title>
+       
+      </ion-header>
+      </ion-card-content>
+      </ion-card>
