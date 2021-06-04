@@ -1,0 +1,71 @@
+<ion-content>
+    <ion-header [translucent]="true">
+        <ion-toolbar color="secondary">
+            <ion-progress-bar color = "success"value="0.100 " buffer="0.00"></ion-progress-bar>
+            <ion-title>
+                <center>
+                    <h1>Login</h1>
+                </center>
+
+
+
+            </ion-title>
+
+        </ion-toolbar>
+
+        <img src="/assets/topcars.png">
+
+
+
+
+
+        <br>
+        <ion-card>
+            <ion-item>
+                <ion-col size=10>
+
+                    <h4> <strong><center>Digite o seu E-mail/Telefone:</center></strong></h4>
+
+
+
+                    <ion-input></ion-input>
+                </ion-col>
+                <br>
+                <br>
+            </ion-item>
+
+        </ion-card>
+
+
+
+        <ion-card>
+            <ion-item>
+                <ion-col size=10>
+
+                    <h4> <strong><center>Digite sua senha:</center></strong></h4>
+
+
+
+                    <ion-input type="password"></ion-input>
+                </ion-col>
+                <br>
+                <br>
+            </ion-item>
+
+        </ion-card>
+        <br>
+
+        <center>
+            <ion-button (click) = "abrirpagina2()" color="success">
+                Entrar
+            </ion-button>
+        </center>
+        <br>
+
+        <h4> <strong><center>Faça seu cadastro</center></strong></h4>
+        <br>
+        <center>
+            <ion-button (click)  = "abrirpagina()" color="success" > 
+                Cadastrar
+            </ion-button>
+        </center>
