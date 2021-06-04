@@ -1,0 +1,139 @@
+<ion-content>
+  <ion-header [translucent]="true">
+      <ion-toolbar color="secondary">
+        <ion-progress-bar color = "success"value="0.88" buffer="0.22"></ion-progress-bar>
+          <ion-title>
+              <center>
+                  <h1>Pagamento</h1>
+              </center>
+
+          </ion-title>
+
+      </ion-toolbar>
+      <img src="/assets/topcars.png">
+      <h3> <strong>Forma de Pagamento </strong>
+
+
+      </h3>
+
+
+
+
+      <img width=55 height=55 src="https://icons.iconarchive.com/icons/designbolts/credit-card-payment/256/Visa-icon.png">
+      <ion-col size=10>
+          <img width=55 height=55 src="https://icons.iconarchive.com/icons/designbolts/credit-card-payment/256/Master-Card-Blue-icon.png">
+      </ion-col>
+      <ion-col size=10>
+          <img width=69 height=48 src="https://www.pikpng.com/pngl/m/386-3866896_carto-elo-png-logo-elo-png-clipart.png">
+      </ion-col>
+      <ion-col size=10>
+          <img width=60 height=50 src="https://www.escoteirossp.org.br/wp/wp-content/uploads/2014/06/Boleto-1.jpg">
+          <br>
+          <h7> *Aceitamos cartões de debito e crédito: Visa/ Mastercard/ Elo e Boleto Bancario </h7>
+          <br>
+          <br>
+
+          <ion-item>
+              <ion-label position="floating">
+                  <h2>Escolha a forma de pagamento desejada</h2>
+              </ion-label>
+              <ion-select (ionChange)="calculate()" placeholder="Select one" [(ngModel)]="toUnit">
+                  <ion-select-option value="Visa">Cartão Credito Visa</ion-select-option>
+                  <ion-select-option value="Mastercard">Cartão Credito Mastercard</ion-select-option>
+                  <ion-select-option value="ELO">Cartão Credito Elo</ion-select-option>
+                  <ion-select-option value="Debito">Cartão de Debito</ion-select-option>
+                  <ion-select-option value="Boleto">Boleto</ion-select-option>
+              </ion-select>
+          </ion-item>
+          <br>
+
+          <ion-item>
+
+              <ion-label position="floating">
+                  <h2> <strong> <center>Digite o numero do cartão</center></strong></h2>
+              </ion-label>
+
+              <ion-input></ion-input>
+              <ion-icon name="card-outline"></ion-icon>
+              <br>
+              <br>
+          </ion-item>
+
+
+
+          <center>
+              <h5> <strong>Nome do titular do cartão </strong>
+              </h5>
+          </center>
+
+          <ion-item>
+
+              <ion-label position="floating">
+                  <h2> <strong>Nome</strong></h2>
+              </ion-label>
+
+              <ion-input></ion-input>
+
+              <br>
+
+
+
+              <ion-label position="floating">
+                  <h2> <strong>Sobrenome</strong></h2>
+              </ion-label>
+
+              <ion-input></ion-input>
+
+              <br>
+              <br>
+          </ion-item>
+          <br>
+          <center>
+              <h5> <strong>Vencimento do cartão </strong>
+              </h5>
+          </center>
+
+          <ion-item>
+
+              <ion-label position="floating">
+                  <h2> <strong>MM/AA</strong></h2>
+              </ion-label>
+
+              <ion-input></ion-input>
+
+              <br>
+          </ion-item>
+          <br>
+
+          <ion-item>
+
+              <ion-label position="floating">
+
+                  <h2> <strong>   <center>Codigo de segurança (CSC)  </center> </strong></h2>
+              </ion-label>
+
+              <ion-input></ion-input>
+
+              <ion-icon name="card-outline"></ion-icon>
+              <h5> <strong>3 Digitos</strong></h5>
+              <br>
+              <br>
+          </ion-item>
+          <br>
+
+
+          <h2>
+              <strong><h2>Informações da Compra</h2></strong>
+          </h2>
+          <br> CHEVROLET ONIX 1.0
+           <br> Endereço: Av. José Lopes Serra , Campinas - SP, 13053-241 <br> Dàs 00:00 ás 06:00
+          <em>	 <h1> <strong><center>Valor da compra: 140,00</center></strong></h1></em>
+
+
+
+
+          <center>
+              <ion-button  (click)  = "abrirpagina2()"  color="success">
+                  Finalizar
+              </ion-button>
+          </center>
